@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe17</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Changez le contenu HTML de la 'div' lorsque le bouton est cliqué.</h3>
+
+    <div id="container">
+        Ceci est du texte alternatif
+    </div>
+
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+
+            $("#bouton").on("click", function () {
+
+                $("#container").html("J'ai <strong> changé </strong> de texte ! ");
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
