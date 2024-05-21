@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe09</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Quand on clique sur le bouton, masque un paragraphe et affiche un message disant "Paragraphe masqué"
+    </h3>
+    <p id="para">Ce paragraphe va être masqué</p>
+    <p id="message" style="display: none;">Paragraphe masqué</p>
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+            $("#bouton").on("click", function () {
+
+                $("#para").hide();
+                $("#message").show();
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
