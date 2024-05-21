@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe10</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Quand on clique sur le bouton, alterne la couleur de fond du paragraphe entre rouge et vert.
+    </h3>
+    <p id="para">Paragraphe</p>
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+            $("#bouton").on("click", function () {
+
+                if ($("#para").css("background-color") === "rgb(255, 0, 0)") {
+                    $("#para").css("background-color", "green");
+                }
+                else {
+                    $("#para").css("background-color", "red");
+                }
+
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
