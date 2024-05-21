@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe07</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Quand on survole le paragraphe avec la souris, change sa couleur de fond en jaune.
+        Quand la souris quitte, revenir à la couleur initiale.
+    </h3>
+    <p class="para">Paragraphe 1</p>
+
+
+    <script>
+        $(function () {
+
+            $(".para").mouseover(function () {
+                $(".para").css("background-color", "yellow");
+            });
+            $(".para").mouseout(function () {
+                $(".para").css("background-color", "white");
+            });
+
+        });
+    </script>
+</body>
+
+</html>
