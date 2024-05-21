@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+   
+</head>
+<body>
+    <p id="para">Hello</p>
+    <p id="para2" style="display: none;">Hello World</p>
+    <p id="para3">Paragraphe 3</p>
+    <p class="text">Salut</p>
+    <p class="text"> Salut 2</p>
+    <p class="mousePara">Paragraphe</p>
+    <p class="mousePara">Paragraphe</p>
+    <button id="bouton1">Bouton 1</button>
+    <button class="petit">Bouton 2</button>
+    <button id="bouton3">Bouton 3</button>
+    <button id="bouton4">Bouton 4</button>
+    <button id="bouton5">Bouton 5</button>
+    <button id="bouton6">Slide up</button>
+    <button id="bouton7">Slide down</button>
+    <button id="bouton8">Bouton 8</button>
+    
+    <script type="text/javascript">
+        $(function(){
+            $(".grand").css("display","none");
+                      // .hide();
+                    });
+                      
+            $("#bouton3").on("click", function()  {
+
+            $("#para").css("background-color", "red");
+
+        });
+
+            $("#bouton1").on("click", function()  {
+
+            $("#para2").show();
+           
+});
+
+
+$("#bouton4" ).on( "click", function() {
+  $( "#para2" ).toggle();
+
+
+});
+
+
+
+
+
+$("#bouton5" ).on( "click", function() {
+  $( "p" ).css("background-color", "blue");
+
+
+});
+
+$("#bouton6").click(function(){
+    $("#para3").slideUp();//.slideDown();
+  });
+  $("#bouton7").click(function(){
+    $("#para3").slideDown();
+  });
+
+  $("#bouton8").on("click", function()  {
+
+$(".text").hide();
+
+});
+
+$(".mousePara").mouseover(function(){
+    $(".mousePara").css("background-color", "yellow");
+  });
+  $(".mousePara").mouseout(function(){
+    $(".mousePara").css("background-color", "white");
+  });
+
+
+</script>
+
+
+      
+       
+    </script>
+</body>
+</html>
