@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe20</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Créer un titre puis créer un espace pour que l'user met son message et un bouton
+        envoyer qui fera que le message s'affiche.
+        NB : Quand l'user envoit les messages, le message doit automatiquement s'afficher sur la zone.</h3>
+
+
+    <h2>Envoyez nous votre commentaire :</h2>
+
+    <div id="contenu"></div>
+
+    <label for="message"></label>
+    <input type="text" id="userMessage">
+    <button type="submit">Envoyez</button><br>
+
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+
+        $(function () {
+
+
+            $("#bouton").on("click", function () {
+
+                $("#contenu").html($("#userMessage").val());
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
