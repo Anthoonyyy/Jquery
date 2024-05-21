@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe14</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Faites basculer la 'div' entre affiché et masqué avec un effet de glissement lorsque le bouton est cliqué.</h3>
+
+    <div id="div" style="display: none;">
+        Hello world
+    </div>
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+
+            $("#bouton").on("click", function () {
+
+                $("#div").slideToggle();
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
