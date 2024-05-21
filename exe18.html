@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe18</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Il y'a 2 'div' avec du texte différents, faites glisser vers le bas la seconde 'div' lorsque le bouton est
+        cliqué</h3>
+
+    <div>
+        Première div
+    </div>
+
+    <div style="display: none;">
+        Deuxième div
+    </div>
+
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+
+            $("#bouton").on("click", function () {
+
+                $("div:first").next().slideDown();
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
