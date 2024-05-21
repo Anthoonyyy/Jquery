@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe01</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Quand on clique sur le bouton, change la couleur de fond du paragraphe en rouge.</h3>
+    <p id="para">Paragraphe </p>
+    <button id="bouton">Bouton </button>
+
+    <script>
+        $(function () {
+
+            $("#bouton").on("click", function () {
+
+                $("#para").css("background-color", "red");
+            });
+        });
+    </script>
+</body>
+
+</html>
