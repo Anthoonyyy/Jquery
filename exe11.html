@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe11</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Il y'a deux paragraphes, sélectionnez le deuxième paragraphe et changez sa couleur en rouge lorsque le bouton
+        est
+        cliqué.
+    </h3>
+    <p class="one"> 1er paragraphe</p>
+    <p>2 eme paragraphe</p>
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+            $("#bouton").on("click", function () {
+
+                $(".one").next().css("background-color", "red");
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
