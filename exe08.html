@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe08</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Quand on clique sur le bouton, masque tous les paragraphes avec la classe text.
+    </h3>
+    <p class="text">Salut</p>
+    <p class="text"> Salut 2</p>
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+            $("#bouton").on("click", function () {
+
+                $(".text").hide();
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
