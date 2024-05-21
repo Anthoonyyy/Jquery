@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe06</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Quand on clique sur le bouton, masque le paragraphe avec une animation et le réaffiche avec une autre animation
+    </h3>
+    <p id="para">Paragraphe 1</p>
+    <button id="bouton">Bouton </button>
+
+    <script>
+        $(function () {
+
+            $("#bouton").click(function () {
+                $("#para").slideUp().slideDown();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
