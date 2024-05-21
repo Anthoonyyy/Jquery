@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe19</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Basculez l'affichage de la 'div' et changez son contenu lorsque le bouton est cliqué.</h3>
+
+
+    <div id="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquid corrupti asperiores totam eos qui dolore
+        aut quod eaque odio.
+    </div>
+
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+
+            $("#bouton").on("click", function () {
+
+                $("#one").slideToggle().html("Mon contenu a changé, cela <strong> fonctionne! </strong>");
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
