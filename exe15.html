@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe15</title>
+    <script type="text/javascript" src="Jquery/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h3>Ajoutez une bordure rouge au parent du paragraphe lorsque le bouton est cliqué.</h3>
+
+    <div>
+        <p>Paragraphe enfant</p>
+    </div>
+
+    <button id="bouton">Bouton</button>
+
+
+    <script>
+        $(function () {
+
+
+            $("#bouton").on("click", function () {
+
+                $("p").parent().css("border", "2px solid red");
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
