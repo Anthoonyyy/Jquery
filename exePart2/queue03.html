@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <script type="text/javascript" src="../Jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <h2>Utilisez les méthodes .queue() et .dequeue() pour animer un élément div avec la classe box : augmentez sa
+        largeur à
+        300px en 2 secondes, puis attendez 1 seconde avant de diminuer son opacité à 0.3 en 1 seconde.</h2>
+    <div class="box" style=" background-color: lightblue; width: 100px; height: 100px; position: relative;">Div 1</div>
+    <button id="click">Cliquez</button>
+
+
+
+
+    <script>
+
+
+        $(function () {
+
+
+            $("#click").on("click", function () {
+                $(".box").queue(function (next) {
+                    $(".box").animate({ width: "300px" }, 2000);
+                    next();
+                }).queue(function (next) {
+                    setTimeout(1000);
+
+                })
+                    .queue(function (next) {
+                        $(".box").animate({ opacity: "0.3" }, 1000);
+                        next();
+                    })
+                    .dequeue();
+            });
+
+
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>
