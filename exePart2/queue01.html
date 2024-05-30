@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <script type="text/javascript" src="../Jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <h2>Utilisez la méthode .animate() pour augmenter la largeur d'un élément div avec la classe box de 100px à 300px en
+        2
+        secondes, puis utilisez .fadeTo() pour diminuer son opacité à 0.5 en 1 seconde.</h2>
+    <div class="box" style=" background-color: lightblue; width: 100px;">Div 1</div>
+    <button id="click">Cliquez</button>
+
+
+
+
+    <script>
+
+
+        $(function () {
+
+
+            $(function () {
+
+                $("#click").on("click", function () {
+                    $('.box').animate({ "width": "300px" }, 2000).fadeTo(1000, 0.5);
+
+                });
+
+            });
+
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>
